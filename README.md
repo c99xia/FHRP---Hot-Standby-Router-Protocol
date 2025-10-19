@@ -6,3 +6,11 @@ To implement a first-hop gateway redundancy protocol (FHRP) solution using Cisco
 ### Network Topology
 ![GNS3 Network Topology](img/HSRP.png)
 
+The topology consists of two Local Area Networks (LANs) and two routers (R1 and R2) that provide mutual redundancy:
+
+**Network A:** 192.168.100.0/24
+**Network B:** 192.168.200.0/24
+**Routers:** R1 and R2 are connected to both networks.
+**Virtual Gateway (HSRP):**
+  _Network A: 192.168.100.100 (HSRP Group 100)
+  _Network B: 192.168.200.100 (HSRP Group 200)
